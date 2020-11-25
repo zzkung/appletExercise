@@ -1,0 +1,5 @@
+<view class="_empty flex flex-direction align-center">
+  <image class="_empty-icon" src="{{image}}" mode="widthFix"></image>
+  <view style="color: {{descColor}};" class="text-center"><text>{{description}}</text></view>
+  <navigator wx:if="{{hasButton}}" url="{{link}}" open-type="{{linkType}}" hover-class="none" class="_empty-btn text-white text-df text-center margin-top" style="background:{{buttonBg}};">{{buttonText}}</navigator>
+</view>

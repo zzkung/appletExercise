@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "ToolBox": "/components/toolBox/index"
+  },
+  "navigationBarTitleText": "个人中心",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#3C91FA"
+}

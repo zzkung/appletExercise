@@ -1,0 +1,25 @@
+<view class="ucBase">
+  <view class="relative user_h_bg" style="background-image:url({{imghttp}}redbook/icon_userbg.png);">
+    <view class="padded-l-35 padded-r-35 font-size-32 text-white flex flex-middle">
+      <image src="{{imghttp}}icon_userpic.png" class='user_headpic'></image>
+      <navigator url="{{is_login?'/pages/User/editdata':'/pages/login/login'}}" hover-class="none">{{is_login?userInfo.nickName:'登录/注册'}} ></navigator>
+    </view>
+  </view>
+  <view class="tool-box padded-l-20 padded-r-20 border-box">
+    <view class="order-box margin-t-20 margin-b-20">
+      <ToolBox toolObj="{{orderarrs}}"></ToolBox>
+    </view>
+    <view class="margin-t-20 margin-b-20">
+      <ToolBox toolObj="{{mytools}}" catchscan="scan"></ToolBox>
+    </view>
+    <view class="margin-t-20 margin-b-20">
+      <ToolBox toolObj="{{procode}}"></ToolBox>
+    </view>
+    <view class="margin-t-20 margin-b-20">
+      <ToolBox toolObj="{{myFortune}}"></ToolBox>
+    </view>
+    <view class="margin-t-20 margin-b-20">
+      <ToolBox toolObj="{{redbook}}"></ToolBox>
+    </view>
+  </view>
+</view>

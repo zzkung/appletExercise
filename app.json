@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/mine/index",
+    "pages/shop/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#3C91FA",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "assets/tabbar/basics.png",
+      "selectedIconPath": "assets/tabbar/basics_cur.png"
+    }, {
+      "pagePath": "pages/mine/index",
+      "text": "个人中心",
+      "iconPath": "assets/tabbar/about.png",
+      "selectedIconPath": "assets/tabbar/about_cur.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

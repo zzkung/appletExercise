@@ -1,0 +1,19 @@
+<view wx:if="{{toolObj.online}}" class="usertool {{toolObj.box.isRadius?'radius8':''}}">
+  <navigator hover-class="none" url="{{toolObj.box.link}}" class="toolslink linkurl flex flex-middle flex-between" wx:if="{{toolObj.box.link&&toolObj.box.name}}">
+    <text>{{toolObj.box.name}}</text>
+    <text class="margin-r-30 font-normal font-size-30 text-secondary">{{toolObj.box.linkname}}</text>
+  </navigator>
+  <view class="toolslink" wx:elif="{{toolObj.box.name}}">{{toolObj.box.name}}</view>
+  <view class="tools {{toolObj.box.isWrap?'toolswrap':''}}">
+    <block wx:for="{{toolObj.list_data}}" wx:key="index">
+      <navigator class="jump_box" hover-class="none" url="{{item.url}}" wx:if="{{item.url}}">
+        <image class="icon-tool" src="{{imghost}}{{item.imgurl}}" mode="aspectFit"></image>
+        <view>{{item.name}}</view>
+      </navigator>
+      <view class="jump_box" wx:else data-id="{{item.name}}" catchtap="{{item.name=='扫码核销'?'scan':''}}">
+        <image class="icon-tool" src="{{imghost}}{{item.imgurl}}" mode="aspectFit"></image>
+        <view>{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+</view>

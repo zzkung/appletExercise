@@ -1,0 +1,18 @@
+.user_h_bg{
+  height: 220rpx;
+  line-height: 220rpx;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+}
+.user_headpic{
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+.member_center_img{position: absolute;right: 0;bottom: 0;width: 220rpx;height: 170rpx;background-size: 100% 100%;background-clip: border-box;background-repeat: no-repeat;}
+
+.ucHc .user_h_bg{height: 320rpx;line-height: 320rpx;}
+.ucHc .tool-box{min-height:calc(100vh - 500rpx);background: #fff;transform: translateY(-22rpx);border-radius: 15rpx 15rpx 0 0;}
+.ucHc .order-box{transform: translateY(-35rpx);box-shadow: 0 2rpx 9rpx 0 rgba(0,0,0,0.10);border-radius: 10rpx;overflow: hidden;height: 160rpx;margin-top: 0!important;margin-bottom: 0!important;}
